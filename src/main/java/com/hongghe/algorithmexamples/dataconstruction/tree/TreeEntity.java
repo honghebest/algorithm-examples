@@ -5,10 +5,10 @@ import java.util.List;
 /**
  * @author hongghe 2018/8/20
  */
-public class Entity {
+public class TreeEntity {
 
     public Object element;
-    public List<Entity> subEntity;
+    public List<TreeEntity> subTreeEntity;
     public int deepth;
 
     public void setElement(Object element) {
@@ -19,12 +19,12 @@ public class Entity {
         return element;
     }
 
-    public List<Entity> getSubEntity() {
-        return subEntity;
+    public List<TreeEntity> getSubEntity() {
+        return subTreeEntity;
     }
 
-    public void setSubEntity(List<Entity> subEntity) {
-        this.subEntity = subEntity;
+    public void setSubEntity(List<TreeEntity> subTreeEntity) {
+        this.subTreeEntity = subTreeEntity;
     }
 
     public void setDeepth(int deepth) {
