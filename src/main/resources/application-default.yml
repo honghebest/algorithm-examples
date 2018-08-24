@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: 'default'
+  application:
+    name: rabbitmqdemo
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&autoReconnect=true&failOverReadOnly=false&useSSL=false&createDatabaseIfNotExist=true
+    username: root
+    password:
+server:
+  port: 8080
+  servlet:
+    context-path: /
+  error:
+    path: /error
