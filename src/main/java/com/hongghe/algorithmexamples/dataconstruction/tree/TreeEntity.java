@@ -9,7 +9,7 @@ public class TreeEntity {
 
     public Object element;
     public List<TreeEntity> subTreeEntity;
-    public int deepth;
+    public int depth;
 
     public void setElement(Object element) {
         this.element = element;
@@ -28,10 +28,10 @@ public class TreeEntity {
     }
 
     public void setDeepth(int deepth) {
-        this.deepth = deepth;
+        this.depth = deepth;
     }
 
     public int getDeepth() {
-        return deepth;
+        return depth;
     }
 }
