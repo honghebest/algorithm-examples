@@ -19,4 +19,26 @@ public class MiddleIndex {
         public Node leftNode;
         public Node rightNode;
     }
+
+    /**
+     * 递归实现前序遍历
+     *
+     * @param root 根结点
+     */
+    public static void index(Node root) {
+        if (root == null) {
+            return;
+        }
+
+        Node currentNode  = new Node();
+        Node lastNode = new Node();
+        currentNode = root;
+        System.out.println(currentNode.getData());
+        if (currentNode.getLeftNode() != null && currentNode != lastNode) {
+            index(root.getLeftNode());
+            index(root.getRightNode());
+        } else {
+
+        }
+    }
 }
