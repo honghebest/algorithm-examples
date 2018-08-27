@@ -1,6 +1,8 @@
 package com.hongghe.algorithmexamples.dataconstruction.tree.index;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Stack;
 
@@ -10,42 +12,25 @@ import java.util.Stack;
 public class FrontIndex {
 
     @Data
-    static class Node {
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class Node {
         public String data;
         public Node leftNode;
         public Node rightNode;
     }
 
-    public void index(Node root) {
+    /**
+     * 前序遍历的后续实现
+     *
+     * @param root 根节点
+     */
+    public static void frintSearch(Node root) {
         if (root == null) {
             return;
         }
 
         Stack<Node> stack = new Stack<>();
-        Node currentNode = new Node();
-        Node lastVisitNode = new Node();
-        currentNode = root;
-        lastVisitNode= null;
 
-        while (currentNode != null) {
-            stack.push(currentNode);
-            currentNode = currentNode.getLeftNode();
-        }
-
-        while (!stack.empty()) {
-            currentNode = stack.pop();
-            if (currentNode.getRightNode() != null &&
-                    currentNode.getRightNode() != lastVisitNode) {
-                stack.push(currentNode);
-                currentNode.getRightNode();
-                while (currentNode != null) {
-                    stack.push(currentNode);
-                    currentNode = currentNode.getLeftNode();
-                }
-            } else {
-                System.out.println(currentNode.getData());
-                lastVisitNode = currentNode;
-            }
-        }
     }
 }
