@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import java.util.Stack;
 
 /**
+ * 二叉树的前序遍历
+ *
  * @author hongghe 2018/8/27
  */
 public class FrontIndex {
@@ -25,7 +27,7 @@ public class FrontIndex {
      *
      * @param root 根节点
      */
-    public static void frintSearch(Node root) {
+    public static void frontSearch(Node root) {
         if (root == null) {
             return;
         }

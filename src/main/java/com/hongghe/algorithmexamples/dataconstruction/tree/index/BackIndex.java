@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import java.util.Stack;
 
 /**
+ * 二叉树的后续遍历
+ *
  * @author hongghe 2018/8/27
  */
 public class BackIndex {

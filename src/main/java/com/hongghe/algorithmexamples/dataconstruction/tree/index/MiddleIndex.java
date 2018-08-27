@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
+ * 二叉树的中序遍历
+ *
  * @author hongghe 2018/8/27
  */
 public class MiddleIndex {

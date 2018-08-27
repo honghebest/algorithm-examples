@@ -42,7 +42,20 @@ public class BalancedTree {
 
     }
 
-    public static void leftLeftRotate() {
+    /**
+     * Left left rotate
+     * @param node
+     */
+    public static void leftLeftRotate(Node node) {
+
+    }
+
+    /**
+     * right right rotate.
+     *
+     * @param node
+     */
+    public static void rightRightRotate(Node node) {
 
     }
 }
