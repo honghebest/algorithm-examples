@@ -40,7 +40,7 @@ public class BackIndex {
      *
      * @param root 跟节点
      */
-    public static void backBinaryTree(Node root) {
+    public static void backIndex(Node root) {
         if (root == null) {
             return;
         }

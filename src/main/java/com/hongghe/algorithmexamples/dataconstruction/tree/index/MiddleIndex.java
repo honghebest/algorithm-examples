@@ -25,7 +25,7 @@ public class MiddleIndex {
      *
      * @param root 根结点
      */
-    public static void index(Node root) {
+    public static void middleIndex(Node root) {
         if (root == null) {
             return;
         }
@@ -35,8 +35,8 @@ public class MiddleIndex {
         currentNode = root;
         System.out.println(currentNode.getData());
         if (currentNode.getLeftNode() != null && currentNode != lastNode) {
-            index(root.getLeftNode());
-            index(root.getRightNode());
+            middleIndex(root.getLeftNode());
+            middleIndex(root.getRightNode());
         } else {
 
         }

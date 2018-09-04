@@ -27,12 +27,20 @@ public class FrontIndex {
      *
      * @param root 根节点
      */
-    public static void frontSearch(Node root) {
+    public static void frontIndexNorecursion(Node root) {
         if (root == null) {
             return;
         }
 
         Stack<Node> stack = new Stack<>();
+
+    }
+
+    public static void frontIndexRecursion(Node root) {
+        if (root == null) {
+            return;
+        }
+
 
     }
 }
