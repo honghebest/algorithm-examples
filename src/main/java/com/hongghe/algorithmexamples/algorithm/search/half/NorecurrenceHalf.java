@@ -5,6 +5,13 @@ package com.hongghe.algorithmexamples.algorithm.search.half;
  */
 public class NorecurrenceHalf {
 
+    /**
+     * 非递归的排序
+     *
+     * @param array 待排序数组
+     * @param v 间隔
+     * @return
+     */
     public static int norecurrenceHalf(int[]array, int v) {
         int start = 0;
         int end = array.length-1;
@@ -20,5 +27,10 @@ public class NorecurrenceHalf {
             }
         }
         return -1;
+    }
+
+    public static void main(String[] args) {
+        int[] array = {1, 231, 12312, 1231, 32};
+        norecurrenceHalf(array, 2);
     }
 }
