@@ -11,7 +11,5 @@ import org.slf4j.LoggerFactory;
  */
 public class TwoPathInsertSort {
 
-
-
     private static final Logger LOGGER = LoggerFactory.getLogger(SelectionSort.class);
 }
