@@ -5,6 +5,6 @@ package com.hongghe.algorithmexamples.dataconstruction.array;
  */
 public class ArrayEntity {
     public Object element;
-    public ArrayEntity frontArrayEntity;
-    public ArrayEntity backArrayEntity;
+
+    public ArrayEntity() {}
 }
