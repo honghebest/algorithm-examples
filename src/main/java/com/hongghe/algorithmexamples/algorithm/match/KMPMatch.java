@@ -20,7 +20,7 @@ public class KMPMatch {
      * 获取字符串的next的函数值
      *
      * @param value
-     * @return
+     * @return next的数据组
      */
     public static int[] getNext(char[] value) {
         int[] next = new int[value.length];
