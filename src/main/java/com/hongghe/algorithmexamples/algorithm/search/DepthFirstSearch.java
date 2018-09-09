@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
@@ -13,6 +15,8 @@ import java.util.List;
  * @author hongghe 2018/8/26
  */
 public class DepthFirstSearch {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(DepthFirstSearch.class);
 
     @Data
     @AllArgsConstructor
