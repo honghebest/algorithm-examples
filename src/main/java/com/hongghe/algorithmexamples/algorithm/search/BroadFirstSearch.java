@@ -28,6 +28,6 @@ public class BroadFirstSearch {
     }
 
     public void depthSearch() {
-
+        LOGGER.info("[depthSearch]Start depth search.");
     }
 }
