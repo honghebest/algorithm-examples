@@ -3,9 +3,9 @@ package com.hongghe.algorithmexamples.dataconstruction.tree;
 /**
  * @author hongghe 2018/8/21
  */
-public class BinaryTreeEntity {
+public class BinaryTreeEntity<T> {
 
-    public Object element;
+    public T element;
     public BinaryTreeEntity leftChild;
     public BinaryTreeEntity rightChild;
     public Integer depth;
@@ -14,7 +14,7 @@ public class BinaryTreeEntity {
         return element;
     }
 
-    public void setElement(Object element) {
+    public void setElement(T element) {
         this.element = element;
     }
 
