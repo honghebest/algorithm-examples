@@ -35,6 +35,7 @@ public class InsertSort {
     }
 
     public static void main(String[] args) {
+        LOGGER.info("[InsertSort]Running.");
         int[] array = {100, 1, 123123, 4, 76};
         InsertSort insertSort = new InsertSort();
         insertSort.insert(array);

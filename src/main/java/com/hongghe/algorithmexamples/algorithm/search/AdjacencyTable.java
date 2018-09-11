@@ -9,4 +9,8 @@ import org.slf4j.LoggerFactory;
 public class AdjacencyTable {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AdjacencyTable.class);
+
+    public static void main(String[] args) {
+        LOGGER.info("[AdjacencyTable]Running.");
+    }
 }

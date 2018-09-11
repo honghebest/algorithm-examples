@@ -12,4 +12,8 @@ import org.slf4j.LoggerFactory;
 public class ShellSort {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(SelectionSort.class);
+
+    public static void main(String[] args) {
+        LOGGER.info("[ShellSort]Running.");
+    }
 }

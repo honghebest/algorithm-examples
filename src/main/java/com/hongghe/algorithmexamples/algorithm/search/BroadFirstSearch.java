@@ -30,4 +30,8 @@ public class BroadFirstSearch {
     public void depthSearch() {
         LOGGER.info("[depthSearch]Start depth search.");
     }
+
+    public static void main(String[] args) {
+        GraphNode graphNode  = new GraphNode();
+    }
 }

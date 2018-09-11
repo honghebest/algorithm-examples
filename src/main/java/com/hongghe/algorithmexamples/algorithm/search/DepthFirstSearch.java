@@ -1,5 +1,6 @@
 package com.hongghe.algorithmexamples.algorithm.search;
 
+import com.google.gson.Gson;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -25,5 +26,12 @@ public class DepthFirstSearch {
     static class GraphNode {
         public Integer data;
         public List<GraphNode> graphNodes;
+    }
+
+    public static void main(String[] args) {
+        GraphNode graphNode = new GraphNode();
+        graphNode.setData(12);
+        Gson gson = new Gson();
+        System.out.println(gson.toJson(graphNode));
     }
 }

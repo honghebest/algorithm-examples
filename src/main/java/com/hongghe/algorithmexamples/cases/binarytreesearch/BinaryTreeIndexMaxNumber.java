@@ -13,9 +13,11 @@ public class BinaryTreeIndexMaxNumber {
 
     public int indexMaxNumber(BinaryTreeEntity<Integer> root) {
         if (root == null) {
+            LOGGER.info("[indexMaxNumber]The max number.");
             return 0;
         }
 
         int maxNumber = root.element;
+        return maxNumber;
     }
 }

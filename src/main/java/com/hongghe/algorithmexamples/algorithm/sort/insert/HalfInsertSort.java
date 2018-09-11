@@ -12,4 +12,8 @@ import org.slf4j.LoggerFactory;
 public class HalfInsertSort {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(SelectionSort.class);
+
+    public static void main(String[] args) {
+        LOGGER.info("[HalfInsertSort]Running.");
+    }
 }
