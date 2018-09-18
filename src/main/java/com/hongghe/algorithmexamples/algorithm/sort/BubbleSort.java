@@ -9,9 +9,11 @@ import org.slf4j.LoggerFactory;
 public class BubbleSort<T extends Comparable<T>> extends Sort<T> {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(BubbleSort.class);
-    
+
     @Override
     public void sort(Comparable[] nums) {
+    }
 
+    public static void main(String[] args) {
     }
 }
