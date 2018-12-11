@@ -9,6 +9,7 @@ import lombok.Data;
 @Data
 @Builder(builderClassName = "Builder", toBuilder = true)
 public class BTreeNode {
+    
     private final Object element;
     private final BTreeNode rightTreeNode;
     private final BTreeNode leftTreeNode;
