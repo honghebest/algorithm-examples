@@ -1,19 +1,18 @@
 package com.hongghe.algorithmexamples.cases.binary.tree.search;
 
 import com.hongghe.algorithmexamples.data.construction.tree.BinaryTreeEntity;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author hongghe 2018/9/10
  */
+@Slf4j
 public class BinaryTreeIndexMaxNumber {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(BinaryTreeIndexMaxNumber.class);
 
     public int indexMaxNumber(BinaryTreeEntity<Integer> root) {
         if (root == null) {
-            LOGGER.info("[indexMaxNumber]The max number.");
+            log.info("[indexMaxNumber]The max number.");
             return 0;
         }
 
