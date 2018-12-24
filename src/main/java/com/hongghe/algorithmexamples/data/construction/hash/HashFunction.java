@@ -3,14 +3,13 @@ package com.hongghe.algorithmexamples.data.construction.hash;
 /**
  * @author hongghe 2018/11/18
  */
-public class HashAlgorithm {
+public class HashFunction {
+
     /**
      * 加法hash
      *
-     * @param key
-     *            字符串
-     * @param prime
-     *            一个质数
+     * @param key 字符串
+     * @param prime 一个质数
      * @return hash结果
      */
     public static int additiveHash(String key, int prime) {
@@ -25,10 +24,8 @@ public class HashAlgorithm {
     /**
      * 旋转hash
      *
-     * @param key
-     *            输入字符串
-     * @param prime
-     *            质数
+     * @param key 输入字符串
+     * @param prime 质数
      * @return hash值
      */
     public static int rotatingHash(String key, int prime) {
@@ -51,8 +48,7 @@ public class HashAlgorithm {
     /**
      * 一次一个hash
      *
-     * @param key
-     *            输入字符串
+     * @param key 输入字符串
      * @return 输出hash值
      */
     public static int oneByOneHash(String key) {
@@ -72,10 +68,7 @@ public class HashAlgorithm {
     /**
      * Bernstein's hash
      *
-     * @param key
-     *            输入字节数组
-     * @param level
-     *            初始hash常量
+     * @param key 输入字节数组
      * @return 结果hash
      */
     public static int bernstein(String key) {
@@ -133,8 +126,7 @@ public class HashAlgorithm {
     /**
      * 32位的FNV算法
      *
-     * @param data
-     *            数组
+     * @param data 数组
      * @return int值
      */
     public static int FNVHash(byte[] data) {
@@ -149,8 +141,7 @@ public class HashAlgorithm {
     /**
      * 改进的32位FNV算法1
      *
-     * @param data
-     *            数组
+     * @param data 数组
      * @return int值
      */
     public static int FNVHash1(byte[] data) {
@@ -169,8 +160,7 @@ public class HashAlgorithm {
     /**
      * 改进的32位FNV算法1
      *
-     * @param data
-     *            字符串
+     * @param data 字符串
      * @return int值
      */
     public static int FNVHash1(String data) {
