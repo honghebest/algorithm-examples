@@ -19,4 +19,8 @@ public class BinaryTreeIndexMaxNumber {
         int maxNumber = root.element;
         return maxNumber;
     }
+
+    public static void main(String[] args) {
+        log.info("The value of element = {}", "asd");
+    }
 }
