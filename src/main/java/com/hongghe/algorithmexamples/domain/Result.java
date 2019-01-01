@@ -1,41 +1,52 @@
 package com.hongghe.algorithmexamples.domain;
 
+import javax.annotation.Nullable;
+
 /**
- * @author hongghe 2018/8/24
+ * @author hongghe 2019/1/1
  */
-public enum  Result {
-    ERROR(-2, "error"),
-    FAIL(-1, "fail"),
-    SUCCESS(0, "success");
+public final class Result<T> {
 
-    private Integer code;
-    private String msg;
+    private final int ret;
+    private final String msg;
+    private final T data;
 
-    Result() {}
-
-    Result(Integer code, String msg) {
-        this.code = code;
+    private Result(int ret, @Nullable String msg, @Nullable T data) {
+        this.ret = ret;
         this.msg = msg;
+        this.data = data;
     }
 
-    public void setCode(Integer code) {
-        this.code = code;
+    public int ret() {
+        return ret;
     }
 
-    public Integer getCode() {
-        return code;
+    public String msg() {
+        return msg;
+    }
+
+    public T data() {
+        return data;
+    }
+
+    public int getRet() {
+        return ret;
     }
 
     public String getMsg() {
         return msg;
     }
 
-    public void setMsg(String msg) {
-        this.msg = msg;
+    public T getData() {
+        return data;
     }
 
-    @Override
-    public String toString() {
-        return "";
+    public static <Response> Result<Response> of(int ret, String msg, Response data) {
+        return new Result<>(ret, msg, data);
     }
+
+    public static <Response> Result<Response> of(int ret, String msg) {
+        return new Result<>(ret, msg, null);
+    }
+
 }

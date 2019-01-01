@@ -10,8 +10,8 @@ public class ApiResult implements Serializable {
 
     private static final long serialVersionUID = -6538790659306907877L;
 
-    public Integer code = Result.SUCCESS.getCode();
-    public String msg = Result.SUCCESS.getMsg();
+    public Integer code = ResultConst.SUCCESS.getCode();
+    public String msg = ResultConst.SUCCESS.getMsg();
     public Object data = new HashMap<>();
 
     public void setCode(Integer code) {
