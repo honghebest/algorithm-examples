@@ -1,6 +1,7 @@
 package com.hongghe.algorithmexamples.algorithm.sort.swap;
 
 import com.google.gson.Gson;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,9 +11,8 @@ import org.slf4j.LoggerFactory;
  *
  * @author hongghe 2018/8/25
  */
+@Slf4j
 public class BubbleSort {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(BubbleSort.class);
 
     private static Gson gson = new Gson();
 
@@ -25,7 +25,7 @@ public class BubbleSort {
                     if (array[j] < array[j-1]) {
                         swap(array, j-1, j);
                     }
-                    LOGGER.info("array is = {}", gson.toJson(array));
+                    log.info("array is = {}", gson.toJson(array));
                 }
             }
         }

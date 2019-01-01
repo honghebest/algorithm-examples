@@ -1,16 +1,14 @@
 package com.hongghe.algorithmexamples.algorithm.sort.selection;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * 选择排序
  *
  * @author hongghe 2018/8/25
  */
+@Slf4j
 public class SelectionSort {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(SelectionSort.class);
 
     public static void main(String[] args) {
 

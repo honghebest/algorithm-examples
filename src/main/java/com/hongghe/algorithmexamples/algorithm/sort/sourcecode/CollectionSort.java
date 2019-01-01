@@ -1,4 +1,4 @@
-package com.hongghe.algorithmexamples.algorithm.sort.javasourcesort;
+package com.hongghe.algorithmexamples.algorithm.sort.sourcecode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
