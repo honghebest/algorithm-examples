@@ -13,4 +13,5 @@ public class ArrayEntity {
         this.object = object;
     }
 
+
 }
