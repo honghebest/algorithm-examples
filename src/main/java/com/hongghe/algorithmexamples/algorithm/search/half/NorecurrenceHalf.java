@@ -29,6 +29,10 @@ public class NorecurrenceHalf {
         return -1;
     }
 
+    public static void haldSort(int[] array, int value) {
+
+    }
+
     public static void main(String[] args) {
         int[] array = {1, 231, 12312, 1231, 32};
         norecurrenceHalf(array, 2);
