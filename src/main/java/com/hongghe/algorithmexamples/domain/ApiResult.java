@@ -1,5 +1,7 @@
 package com.hongghe.algorithmexamples.domain;
 
+import com.google.gson.Gson;
+
 import java.io.Serializable;
 import java.util.HashMap;
 
@@ -10,9 +12,9 @@ public class ApiResult implements Serializable {
 
     private static final long serialVersionUID = -6538790659306907877L;
 
-    public Integer code = ResultConst.SUCCESS.getCode();
-    public String msg = ResultConst.SUCCESS.getMsg();
-    public Object data = new HashMap<>();
+    public Integer code;
+    public String msg;
+    public Object data;
 
     public void setCode(Integer code) {
         this.code = code;
@@ -36,6 +38,25 @@ public class ApiResult implements Serializable {
 
     public Object getData() {
         return data;
+    }
+
+    ApiResult() {}
+
+    public ApiResult(Integer code, String msg) {
+        this.code = code;
+        this.msg = msg;
+        this.data = new Gson().toJson("");
+    }
+
+    public ApiResult(ResultConst resultConst) {
+        this.code = resultConst.getCode();
+        this.msg = resultConst.getMsg();
+    }
+
+    public <response> ApiResult(response response) {
+        this.code = ResultConst.SUCCESS.getCode();
+        this.msg = ResultConst.SUCCESS.getMsg();
+        data = new Gson().toJson(response);
     }
 
     @Override
