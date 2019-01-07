@@ -11,4 +11,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class SetEntity {
+
+    public String name;
+
+    public Integer age;
+
+    public String address;
 }
