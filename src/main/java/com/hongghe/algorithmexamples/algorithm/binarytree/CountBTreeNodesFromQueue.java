@@ -6,4 +6,6 @@ package com.hongghe.algorithmexamples.algorithm.binarytree;
  * @author hongghe 2018/9/18
  */
 public class CountBTreeNodesFromQueue {
+
+    public CountBTreeNodesFromQueue() {}
 }

@@ -5,6 +5,9 @@ package com.hongghe.algorithmexamples.data.construction.array;
  */
 public class ArrayEntity {
 
+    /**
+     * The element of array entity.
+     */
     public Object object;
 
     public ArrayEntity() {}
@@ -12,6 +15,5 @@ public class ArrayEntity {
     public ArrayEntity(Object object) {
         this.object = object;
     }
-
 
 }

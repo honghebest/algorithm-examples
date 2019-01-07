@@ -12,8 +12,10 @@ public class BTreeNode {
 
     /** 二叉树中的元素 */
     private final Object element;
+
     /** 右二叉树 */
     private final BTreeNode rightTreeNode;
+
     /** 左二叉树 */
     private final BTreeNode leftTreeNode;
 }
