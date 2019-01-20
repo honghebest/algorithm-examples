@@ -6,6 +6,6 @@ package com.hongghe.algorithmexamples.data.construction.list;
 public class ListMainDemo {
 
     public static void main(String[] args) {
-        
+
     }
 }
