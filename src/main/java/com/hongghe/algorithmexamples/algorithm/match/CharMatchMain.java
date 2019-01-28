@@ -7,7 +7,7 @@ import com.google.gson.Gson;
  */
 public class CharMatchMain {
 
-    private static final String NAME_REGEX = "";
+    private static final String NAME_REGEX = ".";
 
     public static void main(String[] args) {
         String headString = "I am good";

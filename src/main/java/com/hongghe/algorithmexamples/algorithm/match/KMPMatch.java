@@ -12,7 +12,7 @@ public class KMPMatch {
      *
      * @param array
      */
-    public static void partialMatchTable(int[]array) {
+    public static void partialMatchTable(int[] array) {
 
     }
 
