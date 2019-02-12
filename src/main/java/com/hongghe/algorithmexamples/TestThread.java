@@ -36,7 +36,7 @@ public class TestThread {
 
     public static Integer getCurrentTimestamp() {
         DateTime dateTime = new DateTime();
-        log.info("[time] time = {}", dateTime.dayOfWeek().roundFloorCopy().getMillis()/1000);
+        log.info("time = {}", dateTime.dayOfWeek().roundFloorCopy().getMillis()/1000);
         return dateTime.getDayOfWeek();
     }
 }
