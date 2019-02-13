@@ -27,7 +27,6 @@ public class BalancedTree {
 
     /**
      * Right rotate.
-     *
      * @param node
      */
     public void rightRotate(Node node) {
@@ -35,7 +34,6 @@ public class BalancedTree {
 
     /**
      * Left rotate.
-     *
      * @param node
      */
     public void leftRotate(Node node) {
@@ -52,7 +50,6 @@ public class BalancedTree {
 
     /**
      * right right rotate.
-     *
      * @param node
      */
     public static void rightRightRotate(Node node) {
