@@ -1,7 +1,7 @@
 package com.hongghe.algorithmexamples.leetcode;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 /**
  * @author: hongghe @date: 2019-02-21 10:10
@@ -11,24 +11,31 @@ public class TwoNumAddSolution {
       public class ListNode {
           int val;
           ListNode next;
-         ListNode(int x) { val = x; }
+          ListNode(int x) { val = x; }
       }
 
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-          List<Integer> list = new LinkedList<>();
+        Queue<Integer> queue = new ConcurrentLinkedQueue<>();
+        int sum = 0;
+        int nodeOne = 0;
+        int nodeTwo = 0;
           while (l1.next != null) {
-             ((LinkedList<Integer>) list).push(l1.val + l2.val);
+              nodeOne = nodeOne*10 + l1.val;
+              nodeTwo = nodeTwo*10 + l2.val;
               l1 = l2.next;
               l2 = l2.next;
           }
 
-        ListNode listNode = new ListNode(0);
-        for (int i=0; i<list.size(); i++) {
-            listNode.val = list.get(list.size()-i-1);
-            listNode = listNode.next;
-        }
-        return listNode;
+          sum = nodeOne + nodeTwo;
+          ListNode listNode = new ListNode(sum%10);
+          if (sum%10 > 0) {
+              ListNode next = new ListNode(sum%10);
+              sum = sum/10;
+              listNode.val = sum % 10;
+              listNode.next = next;
+          }
+          return listNode;
     }
 
 }

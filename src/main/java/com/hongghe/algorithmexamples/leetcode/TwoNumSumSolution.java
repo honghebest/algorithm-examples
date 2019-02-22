@@ -5,5 +5,7 @@ package com.hongghe.algorithmexamples.leetcode;
  */
 public class TwoNumSumSolution {
 
-
+    public int[] solution(int[] object1, int[] object2,int target) {
+        return new int[2];
+    }
 }
