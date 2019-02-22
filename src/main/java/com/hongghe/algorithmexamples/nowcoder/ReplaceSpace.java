@@ -12,9 +12,15 @@ public class ReplaceSpace {
      * @return 替换后的结果
      */
     public String replaceSpace(StringBuffer str) {
+        char[] chars = str.toString().toCharArray();
+        for (char obj : chars) {
+            if (obj == ' ') {
+
+            }
+        }
         return null;
     }
-    
+
     public static void main(String[] args) {
         ReplaceSpace replaceSpace = new ReplaceSpace();
     }
