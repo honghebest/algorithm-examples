@@ -8,31 +8,25 @@ package com.hongghe.algorithmexamples.leetcode;
 public class ReverseNumber {
 
     public int reverse(int x) {
-        StringBuilder stringBuilder = new StringBuilder();
-        int z = -1;
-        if (x > 0) {
-            z = 1;
-        } else {
-            x = (z)*x;
+        String xStr = String.valueOf(x);
+        String result = "";
+        for (int i = 0 ;i < xStr.length(); i++){
+            char  item =  xStr.charAt(i);
+            result = String.valueOf(item) + result;
         }
-
-        while (x/10 > 0) {
-            int y = x%10;
-            stringBuilder.append(y);
-            x = x/10;
+        if (String.valueOf(result.charAt(result.length()-1)).equals("-")){
+            result = result.substring(0,result.length()-1);
+            result = "-" + result;
         }
-        stringBuilder.append(x);
-        int ret = 0;
-        try {
-            ret = Integer.valueOf(stringBuilder.toString());
-        } catch (Exception e) {
-            return ret;
+        Long resultLong = Long.valueOf(result);
+        if (resultLong> 2147483647L || resultLong< -2147483648L){
+            return 0;
         }
-        return (z)*Integer.valueOf(stringBuilder.toString());
+        return Integer.valueOf(result) ;
     }
 
     public static void main(String[] args) {
         ReverseNumber reverseNumber = new ReverseNumber();
-        System.out.println(reverseNumber.reverse(-123));
+        System.out.println(reverseNumber.reverse(-1231231231));
     }
 }
