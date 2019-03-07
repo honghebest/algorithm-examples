@@ -32,6 +32,17 @@ public class ReverseMain {
     }
 
 
+    public static Node Reverse(Node head) {
+        if (head == null || head.getNext() == null) {
+            return head;
+        }
+
+        Node nextHead = Reverse(head.getNext());
+        head.getNext().setNext(head);
+        head.setNext(null);
+        return nextHead;
+    }
+
     public static Node Reverse1(Node head) {
         // head看作是前一结点，head.getNext()是当前结点，reHead是反转后新链表的头结点
         if (head == null || head.getNext() == null) {
@@ -42,6 +53,7 @@ public class ReverseMain {
         head.setNext(null);// 前一结点的指针域令为null;
         return reHead;// 反转后新链表的头结点
     }
+
 
     public static Node reverse2(Node head) {
         if (head == null)
