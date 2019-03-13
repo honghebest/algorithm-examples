@@ -17,8 +17,6 @@ import java.util.List;
  */
 public class DepthFirstSearch {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(DepthFirstSearch.class);
-
     @Data
     @AllArgsConstructor
     @NoArgsConstructor

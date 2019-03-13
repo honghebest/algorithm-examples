@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,9 +15,8 @@ import java.util.List;
  *
  * @author hongghe 2018/8/26
  */
+@Slf4j
 public class BroadFirstSearch {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(BroadFirstSearch.class);
 
     @Data
     @AllArgsConstructor
@@ -28,7 +28,7 @@ public class BroadFirstSearch {
     }
 
     public void depthSearch() {
-        LOGGER.info("[depthSearch]Start depth search.");
+        log.info("[depthSearch]Start depth search.");
     }
 
     public static void main(String[] args) {
