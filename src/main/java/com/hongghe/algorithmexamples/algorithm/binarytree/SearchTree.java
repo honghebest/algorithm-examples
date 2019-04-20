@@ -55,6 +55,55 @@ public class SearchTree {
      */
     public ArrayList<Integer> preSearchRecursive(TreeNode root) {
         ArrayList<Integer> result = new ArrayList<>();
+        preSearchRe(root, result);
         return result;
+    }
+
+    public void preSearchRe(TreeNode root, ArrayList<Integer> result) {
+        if (root == null) return;
+        result.add(root.getData());
+        preSearchRe(root.getLeft(), result);
+        preSearchRe(root.getRight(), result);
+    }
+
+
+    /**
+     * 中序遍历
+     *
+     * @param root
+     * @return
+     */
+    public ArrayList<Integer> middleSearch(TreeNode root) {
+        ArrayList<Integer> list = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode current = root;
+        while (current != null && !stack.empty()) {
+            while (current != null) {
+                stack.add(current);
+                current = current.getLeft();
+            }
+
+            current = stack.peek();
+            stack.pop();
+            list.add(current.getData());
+            current = current.getRight();
+        }
+        return list;
+    }
+
+    /**
+     * 后序遍历
+     *
+     * @param root
+     * @return
+     */
+    public ArrayList<Integer> postSearch(TreeNode root) {
+        ArrayList<Integer> list = new ArrayList<>();
+        if (root == null) {
+            return list;
+        }
+        list.addAll(postSearch(root.getLeft()));
+        list.addAll(postSearch(root.getRight()));
+        return list;
     }
 }
