@@ -99,9 +99,7 @@ public class SearchTree {
      */
     public ArrayList<Integer> postSearch(TreeNode root) {
         ArrayList<Integer> list = new ArrayList<>();
-        if (root == null) {
-            return list;
-        }
+        if (root == null) return list;
         list.addAll(postSearch(root.getLeft()));
         list.addAll(postSearch(root.getRight()));
         return list;

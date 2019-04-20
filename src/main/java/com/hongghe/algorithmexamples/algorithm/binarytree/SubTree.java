@@ -16,10 +16,7 @@ public class SubTree {
     public boolean hasSubTree(TreeNode root1, TreeNode root2) {
         boolean result = false;
         if (root1 != null && root2 != null) {
-            if (root1.getData() == root2.getData()) {
-                result = doesTree1HasTree2(root1, root2);
-            }
-
+            if (root1.getData() == root2.getData()) result = doesTree1HasTree2(root1, root2);
             if (!result) result = hasSubTree(root1.getLeft(), root2);
             if (!result) result = hasSubTree(root1.getRight(), root2);
         }
