@@ -25,4 +25,17 @@ public class BalanceTree {
         if (Math.abs(leftDepth - rightDepth) > 1) isBalance = false;
         return rightDepth > leftDepth ? rightDepth+1 : leftDepth+1;
     }
+
+
+    /**
+     * <p>The depth of binary tree.</p>
+     *
+     * @param root root of tree
+     * @return the number of tree
+     */
+    public static int depth(TreeNode root) {
+        if (root == null) return 0;
+        return depth(root.getLeft()) > depth(root.getRight()) ?
+                depth(root.getLeft()) + 1 : depth(root.getRight()) + 1;
+    }
 }

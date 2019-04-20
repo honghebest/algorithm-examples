@@ -11,10 +11,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 public class CountBTreeNodesFromQueue {
 
     public int count(BTreeNode root) {
-        if (root ==  null) {
-            return 0;
-        }
-
+        if (root ==  null) return 0;
         Queue<Object> queue = new ConcurrentLinkedQueue<>();
         if (count(root.getLeftTreeNode()) > 0) queue.add(root.getLeftTreeNode().getElement());
         queue.add(root.getElement());

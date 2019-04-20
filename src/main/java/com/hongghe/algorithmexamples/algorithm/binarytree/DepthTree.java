@@ -3,7 +3,7 @@ package com.hongghe.algorithmexamples.algorithm.binarytree;
 /**
  * @author: hongghe @date: 2019-04-18 18:02
  */
-public class DeepthTree {
+public class DepthTree {
 
     /**
      * 求深度
