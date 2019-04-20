@@ -12,6 +12,12 @@ public class BalanceTree {
         return isBalance;
     }
 
+    /**
+     * <pre>求深度</pre>
+     *
+     * @param root 根节点
+     * @return 返回深度
+     */
     public int getDepth(TreeNode root) {
         if (root == null) return 0;
         int leftDepth = getDepth(root.getLeft());

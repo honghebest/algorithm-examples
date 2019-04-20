@@ -1,5 +1,8 @@
 package com.hongghe.algorithmexamples.algorithm.binarytree;
 
+import java.util.ArrayList;
+import java.util.Stack;
+
 /**
  * @author: hongghe @date: 2019-04-18 18:23
  */
@@ -25,5 +28,33 @@ public class SearchTree {
             if (array[j] < array[end]) return false;
         }
         return judge(array, start, i-1) && judge(array, i, end-1);
+    }
+
+    /**
+     * <pre>前序迭代遍历</pre>
+     *
+     * @param root 根节点
+     * @return
+     */
+    public ArrayList<Integer> preSearch(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<>();
+        ArrayList<Integer> list = new ArrayList<>();
+        if (root == null) return list;
+        stack.push(root);
+        while (!stack.empty()) {
+            TreeNode node = stack.pop();
+            list.add(node.getData());
+            if (node.getRight() != null) stack.push(node.getRight());
+            if (node.getLeft() != null) stack.push(node.getLeft());
+        }
+        return list;
+    }
+
+    /**
+     * <p>前序递归遍历</p>
+     */
+    public ArrayList<Integer> preSearchRecursive(TreeNode root) {
+        ArrayList<Integer> result = new ArrayList<>();
+        return result;
     }
 }
