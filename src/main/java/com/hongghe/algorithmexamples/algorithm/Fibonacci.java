@@ -16,11 +16,11 @@ public class Fibonacci {
      * @return
      */
     public static int fibonacciRecursive(int n) {
-        if (n<0) {
+        if (n < 0) {
             return 0;
         }
 
-        if (n ==0) {
+        if (n == 0) {
             return 0;
         }
 
@@ -43,26 +43,24 @@ public class Fibonacci {
         }
         int sum = 0;
         for (int i=1; i<=n; i++) {
-            sum +=fibonacciRecursive(i);
+            sum += fibonacciRecursive(i);
         }
         return sum;
     }
 
     public static int fibonacci(int n) {
         int f1 = 1;
-        int f2 = 1;
-        int prePrefib = f1;
+        int f2 = 2;
+        int prePreFib = f1;
         int preFib = f2;
         int fib = 0;
         int flag = 2;
-        if (n == 1 || n == 2) {
-            return f1;
-        }
-
-        if (n > 3) {
+        if (n == 1) return f1;
+        if (n == 2) return f2;
+        if (n >= 3) {
             while (flag < n) {
-                fib = preFib + prePrefib;
-                prePrefib = preFib;
+                fib = preFib + prePreFib;
+                prePreFib = preFib;
                 preFib = fib;
                 flag ++;
             }
