@@ -15,7 +15,7 @@ public class CountBTreeNodes {
      */
     public static int getNodesOfBTree(BTreeNode root) {
         if (null == root) {
-            return -1;
+            return 0;
         } else {
             return getNodesOfBTree(root.getLeftTreeNode()) + getNodesOfBTree(root.getRightTreeNode()) + 1;
         }
