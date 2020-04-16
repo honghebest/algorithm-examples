@@ -21,7 +21,7 @@ public class LongCommonSubString {
         return flag;
     }
 
-    public static String repalaceSpace(String[] strings) {
+    public static String replaceSpace(String[] strings) {
         if (!checkString(strings)) {
             return "";
         }

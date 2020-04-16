@@ -4,15 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * @author hongghe 2018/8/25
  */
 public class BalancedTree {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(BalancedTree.class);
 
     @Data
     @AllArgsConstructor
