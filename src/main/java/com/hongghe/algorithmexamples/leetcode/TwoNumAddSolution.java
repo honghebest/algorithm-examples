@@ -17,7 +17,7 @@ public class TwoNumAddSolution {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         Queue<Integer> queue = new ConcurrentLinkedQueue<>();
-        int sum = 0;
+        int sum;
         int nodeOne = 0;
         int nodeTwo = 0;
           while (l1.next != null) {
