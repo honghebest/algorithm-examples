@@ -8,7 +8,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * @author: hongghe @date: 2019-04-03 10:46
+ * @author: honghe zhang
+ * @date: 2019-04-03 10:46
  */
 public class BloomFilter {
 

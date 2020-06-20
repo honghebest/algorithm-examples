@@ -8,9 +8,7 @@ import com.google.gson.JsonElement;
 public class GsonDefault {
 
     public static JsonElement toJson(Object object) {
-     if (object == null) {
-         return null;
-     }
+     if (object == null) return null;
    return null;
     }
 

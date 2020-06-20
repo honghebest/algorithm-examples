@@ -8,7 +8,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 /**
  * The start up class.
  *
- * @author hongghe 2018/08/20
+ * @author honghe zhang 2018/08/20
  */
 @EnableAsync
 @EnableScheduling
