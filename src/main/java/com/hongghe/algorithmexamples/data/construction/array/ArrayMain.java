@@ -8,7 +8,7 @@ import com.hongghe.algorithmexamples.data.construction.link.Node;
 public class ArrayMain {
 
     public static void main(String[] args) {
-        Node node = new Node(1, new Node(), new Node());
+        Node node = new Node(1, new Node(), new Node(), 0);
         System.out.println(node.toString());
     }
 }

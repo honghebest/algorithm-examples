@@ -14,4 +14,5 @@ public class Node {
     public Object element;
     public Node front;
     public Node back;
+    public int data;
 }
